@@ -109,7 +109,8 @@ install: hevel
 
 # Arch-specific targets
 arch-install-deps:
-	sudo pacman -S --needed base-devel wayland wayland-protocols libinput pixman xorg-xkbcomp xkeyboard-config libdrm libudev xcb-util xcb-util-wm xcb-util-image xcb-util-cursor wld
+	sudo pacman -S --needed base-devel wayland wayland-protocols libinput pixman xorg-xkbcomp xkeyboard-config libdrm libudev xcb-util xcb-util-wm xcb-util-image xcb-util-cursor
+	yay -S --needed wld-git || sudo pacman -S --needed wld
 
 arch-build-swc:
 	git clone https://github.com/michaelforney/swc.git

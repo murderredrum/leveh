@@ -1,6 +1,10 @@
 #!/bin/bash
 # Hevel Wayland Compositor startup script for Arch Linux
 
+# Check for available terminals before starting
+echo "Проверка наличия поддерживаемых терминалов..."
+./check_terminals.sh
+
 # Terminate any existing wayland sessions
 export DISPLAY=""
 unset WAYLAND_DISPLAY

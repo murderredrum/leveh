@@ -37,6 +37,12 @@ make
 sudo make install
 ```
 
+Or install the package from AUR:
+
+```bash
+yay -S wld-git  # or paru -S wld-git
+```
+
 And SWC - the core library that Hevel is built upon:
 
 ```bash
@@ -44,6 +50,12 @@ git clone https://github.com/michaelforney/swc.git
 cd swc
 make
 sudo make install
+```
+
+It's also recommended to install at least one of the supported terminals for terminal spawning functionality:
+
+```bash
+sudo pacman -S foot alacritty kitty xterm rxvt-unicode gnome-terminal
 ```
 
 ### Building and Installing Hevel

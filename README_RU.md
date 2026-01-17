@@ -26,6 +26,12 @@ Hevel - это плавающий оконный менеджер с возмо�
 sudo pacman -S base-devel wayland wayland-protocols libinput pixman xorg-xkbcomp xkeyboard-config libdrm libudev xcb-util xcb-util-wm xcb-util-image xcb-util-cursor wld-git
 ```
 
+Также рекомендуется установить хотя бы один из поддерживаемых терминалов для возможности запуска терминалов через аккорды:
+
+```bash
+sudo pacman -S foot alacritty kitty xterm rxvt-unicode gnome-terminal
+```
+
 Также потребуется установить swc - основную библиотеку, на которой работает Hevel:
 
 ```bash
