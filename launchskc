@@ -1,0 +1,2 @@
+cd ~/hevel
+stdbuf -oL -eL ./hevel 2>&1 | tee hevel_debug.log
