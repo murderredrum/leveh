@@ -1,0 +1,13 @@
+[Unit]
+Description=Hevel Wayland Compositor
+After=graphical-session-pre.target
+Wants=graphical-session-pre.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/hevel
+RemainAfterExit=yes
+Environment=WAYLAND_DISPLAY=wayland-0
+
+[Install]
+WantedBy=graphical-session.target
