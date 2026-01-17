@@ -1,25 +1,25 @@
 #define USE_IMAGE true
 
 #ifdef USE_IMAGE
-	static char* imgpath = "/home/srb/Downloads/2.png";
+	static char* imgpath = "/usr/share/backgrounds/default.jpg";
 #endif 
 
-static const uint32_t background_color = 0xFF787878;
+static const uint32_t background_color = 0xFF282A2E;
 
-static const uint32_t outer_border_color_inactive = 0xffffffea;
-static const uint32_t inner_border_color_inactive = 0xffddbd8c;
+static const uint32_t outer_border_color_inactive = 0xFF3A3A3A;
+static const uint32_t inner_border_color_inactive = 0xFF3E92DC;
 
-static const uint32_t outer_border_color_active = 0xffffffea;
-static const uint32_t inner_border_color_active = 0xffc99043;
+static const uint32_t outer_border_color_active = 0xFF3A3A3A;
+static const uint32_t inner_border_color_active = 0xFFFF5555;
 
-static const uint32_t outer_border_width = 4;
-static const uint32_t inner_border_width = 4;
+static const uint32_t outer_border_width = 2;
+static const uint32_t inner_border_width = 2;
 
-static const uint32_t select_box_color = 0xffffffff;
-static const uint32_t select_box_border = 2;
+static const uint32_t select_box_color = 0xFF44475A;
+static const uint32_t select_box_border = 1;
 
 static const char *const select_term_app_id = "hevel-select";
-static const char *const term = "/usr/bin/foot";
+static const char *const term = "/usr/bin/alacritty";
 
 static const int chord_click_timeout_ms = 125;
 
@@ -42,8 +42,9 @@ static const bool enable_terminal_spawning = true;
 static const bool scroll_drag_mode = true;
 
 static const char *const terminal_app_ids[] = {
-        "/usr/bin/foot",
-        "/usr/bin/foot",
-        "kitty",
-        NULL
+	"alacritty",
+	"kitty",
+	"foot",
+	"wezterm",
+	NULL
 };

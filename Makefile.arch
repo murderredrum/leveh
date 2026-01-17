@@ -107,7 +107,6 @@ install: hevel
 	install -D -m 755 swcsnap $(DESTDIR)$(BINDIR)/swcsnap
 	install -D -m 755 hbar $(DESTDIR)$(BINDIR)/hbar
 
-
 # Arch-specific targets
 arch-install-deps:
 	sudo pacman -S --needed base-devel wayland wayland-protocols libinput pixman xorg-xkbcomp xkeyboard-config libdrm libudev xcb-util xcb-util-wm xcb-util-image xcb-util-cursor wld
