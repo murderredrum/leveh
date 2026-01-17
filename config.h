@@ -19,7 +19,7 @@ static const uint32_t select_box_color = 0xFF44475A;
 static const uint32_t select_box_border = 1;
 
 static const char *const select_term_app_id = "hevel-select";
-static const char *const term = "/usr/bin/alacritty";
+static const char *const term = "/usr/bin/foot";
 
 static const int chord_click_timeout_ms = 125;
 
@@ -46,5 +46,11 @@ static const char *const terminal_app_ids[] = {
 	"kitty",
 	"foot",
 	"wezterm",
+	"xterm",
+	"urxvt",
+	"gnome-terminal",
+	"konsole",
+	"xfce4-terminal",
+	"terminator",
 	NULL
 };
